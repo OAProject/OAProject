@@ -25,6 +25,8 @@
 		1D695AF71FD667A800586B9F /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D695AF61FD667A800586B9F /* BaseTabBarController.swift */; };
 		1D741A9F1FD6751600F93EF8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D741A9D1FD6751600F93EF8 /* LoginVC.swift */; };
 		1D741AA01FD6751600F93EF8 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D741A9E1FD6751600F93EF8 /* LoginVC.xib */; };
+		1DB3FF711FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3FF701FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip */; };
+		1DB3FF731FFF311A00BA64BE /* Swift.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3FF721FFF311A00BA64BE /* Swift.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		1D695AF61FD667A800586B9F /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		1D741A9D1FD6751600F93EF8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1D741A9E1FD6751600F93EF8 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		1DB3FF701FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "OA客户端流程图.xlsx.zip"; sourceTree = "<group>"; };
+		1DB3FF721FFF311A00BA64BE /* Swift.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Swift.zip; sourceTree = "<group>"; };
 		58D47E60118C4355334F963F /* Pods_SwiftProducts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProducts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6712D14B2C4C1F0401FDFC7D /* Pods-SwiftProducts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProducts.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProducts/Pods-SwiftProducts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,6 +250,8 @@
 		1D06FBDE1EFCE588005EB78E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1DB3FF721FFF311A00BA64BE /* Swift.zip */,
+				1DB3FF701FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -418,9 +424,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D06FBB11EFCC983005EB78E /* LaunchScreen.storyboard in Resources */,
+				1DB3FF711FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip in Resources */,
 				1D06FBAE1EFCC983005EB78E /* Assets.xcassets in Resources */,
 				1D741AA01FD6751600F93EF8 /* LoginVC.xib in Resources */,
 				1D06FBAC1EFCC983005EB78E /* Main.storyboard in Resources */,
+				1DB3FF731FFF311A00BA64BE /* Swift.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
