@@ -1,14 +1,14 @@
 //
-//  BaseTabBarController.swift
+//  MainViewController.swift
 //  SwiftProducts
 //
-//  Created by wzk on 2017/12/5.
-//  Copyright © 2017年 wzk. All rights reserved.
+//  Created by wzk on 2018/1/8.
+//  Copyright © 2018年 wzk. All rights reserved.
 //
 
 import UIKit
 
-class BaseTabBarController: UITabBarController {
+class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
