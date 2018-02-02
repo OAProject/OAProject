@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09F4023B597BF38CFE73EC5D /* Pods_SwiftProducts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D47E60118C4355334F963F /* Pods_SwiftProducts.framework */; };
+		1D03C5A92022D94C0007C46B /* ProtocolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03C5A82022D94C0007C46B /* ProtocolClass.swift */; };
+		1D03C5AB2022E1E10007C46B /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03C5AA2022E1E10007C46B /* Office.swift */; };
+		1D03C5AD2022E2410007C46B /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D03C5AC2022E2410007C46B /* Meeting.swift */; };
 		1D06FBA71EFCC983005EB78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06FBA61EFCC983005EB78E /* AppDelegate.swift */; };
 		1D06FBA91EFCC983005EB78E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D06FBA81EFCC983005EB78E /* ViewController.swift */; };
 		1D06FBAC1EFCC983005EB78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D06FBAA1EFCC983005EB78E /* Main.storyboard */; };
@@ -57,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		01577D6819A75036E344FFBF /* Pods-SwiftProducts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProducts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProducts/Pods-SwiftProducts.debug.xcconfig"; sourceTree = "<group>"; };
+		1D03C5A82022D94C0007C46B /* ProtocolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolClass.swift; sourceTree = "<group>"; };
+		1D03C5AA2022E1E10007C46B /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
+		1D03C5AC2022E2410007C46B /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		1D06FBA31EFCC983005EB78E /* SwiftProducts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProducts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D06FBA61EFCC983005EB78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D06FBA81EFCC983005EB78E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +271,9 @@
 			children = (
 				1DB3FF922003476F00BA64BE /* NormalUI */,
 				1DB3FF9A2003476F00BA64BE /* ErCodeScan */,
+				1D03C5A82022D94C0007C46B /* ProtocolClass.swift */,
+				1D03C5AA2022E1E10007C46B /* Office.swift */,
+				1D03C5AC2022E2410007C46B /* Meeting.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -618,11 +627,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB3FFA62003481B00BA64BE /* BaseTabViewController.swift in Sources */,
+				1D03C5A92022D94C0007C46B /* ProtocolClass.swift in Sources */,
 				1DB3FFA22003476F00BA64BE /* BaseViewController.swift in Sources */,
 				1D06FBA91EFCC983005EB78E /* ViewController.swift in Sources */,
 				1DB3FF7620030E2700BA64BE /* MainViewController.swift in Sources */,
 				1DB3FF9F2003476F00BA64BE /* NormalTabBarController.swift in Sources */,
 				1DB3FFA12003476F00BA64BE /* BaseView.swift in Sources */,
+				1D03C5AD2022E2410007C46B /* Meeting.swift in Sources */,
+				1D03C5AB2022E1E10007C46B /* Office.swift in Sources */,
 				1DB3FF9120031DA200BA64BE /* ContactViewController.swift in Sources */,
 				1D0F53D920035C4B0035D6D7 /* ConfigPrint.swift in Sources */,
 				1DB3FF9C2003476F00BA64BE /* BaseButton.swift in Sources */,

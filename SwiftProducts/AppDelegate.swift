@@ -6,15 +6,20 @@
 //  Copyright © 2017年 wzk. All rights reserved.
 //
 /**
- *  崔娜、熊素平--
+ *  
  */
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,Student {
+    func play<Goods>(item: Goods) {
+        
+    }
+    
 
     var window: UIWindow?
 
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -25,6 +30,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         */
+        
+        let array = [1,2,3,4,5,6,7,8,9,0]
+        let fiterNumbers = array.filter {
+            $0>3
+        }
+        let sortNumbers = array.sorted {
+            $0>$1
+        }
+        print(fiterNumbers)
+        print(sortNumbers)
         return true
     }
 
