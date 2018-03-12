@@ -22,7 +22,7 @@
 		1D0F53D720035AB50035D6D7 /* ConfigColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F53D620035AB50035D6D7 /* ConfigColor.swift */; };
 		1D0F53D920035C4B0035D6D7 /* ConfigPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F53D820035C4B0035D6D7 /* ConfigPrint.swift */; };
 		1D0F53E62003661F0035D6D7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3FFB42003579900BA64BE /* Info.plist */; };
-		1D791CC220036FCF00C24343 /* ConfigLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D791CC120036FCF00C24343 /* ConfigLocation.swift */; };
+		1D791CC220036FCF00C24343 /* ConfigStings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D791CC120036FCF00C24343 /* ConfigStings.swift */; };
 		1D791CC62003755900C24343 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D791CC82003755900C24343 /* InfoPlist.strings */; };
 		1DB3FF711FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3FF701FFF30FF00BA64BE /* OA客户端流程图.xlsx.zip */; };
 		1DB3FF731FFF311A00BA64BE /* Swift.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3FF721FFF311A00BA64BE /* Swift.zip */; };
@@ -39,6 +39,8 @@
 		1DB3FFA62003481B00BA64BE /* BaseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3FFA52003481B00BA64BE /* BaseTabViewController.swift */; };
 		1DB3FFA820034B1400BA64BE /* QrCodeScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3FFA720034B1400BA64BE /* QrCodeScanning.swift */; };
 		1DB3FFB02003578200BA64BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3FFB22003578200BA64BE /* Localizable.strings */; };
+		1DF4BA112056268B00607016 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4BA102056268B00607016 /* LoginViewController.swift */; };
+		1DF4BA132056281B00607016 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4BA122056281B00607016 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +84,7 @@
 		1D0F53DD200364050035D6D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1D0F53DE2003642D0035D6D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1D0F53E3200365F60035D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
-		1D791CC120036FCF00C24343 /* ConfigLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigLocation.swift; sourceTree = "<group>"; };
+		1D791CC120036FCF00C24343 /* ConfigStings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigStings.swift; sourceTree = "<group>"; };
 		1D791CC3200370B200C24343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1D791CC72003755900C24343 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D791CC92003755B00C24343 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -103,6 +105,8 @@
 		1DB3FFAC200355C500BA64BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		1DB3FFAD200355C600BA64BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1DB3FFB12003578200BA64BE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1DF4BA102056268B00607016 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1DF4BA122056281B00607016 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		58D47E60118C4355334F963F /* Pods_SwiftProducts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProducts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6712D14B2C4C1F0401FDFC7D /* Pods-SwiftProducts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProducts.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftProducts/Pods-SwiftProducts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,7 +205,7 @@
 			children = (
 				1D0F53D620035AB50035D6D7 /* ConfigColor.swift */,
 				1D0F53D820035C4B0035D6D7 /* ConfigPrint.swift */,
-				1D791CC120036FCF00C24343 /* ConfigLocation.swift */,
+				1D791CC120036FCF00C24343 /* ConfigStings.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -305,6 +309,7 @@
 		1D741A9A1FD674F100F93EF8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1DF4BA102056268B00607016 /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 		1D741A9B1FD674F100F93EF8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1DF4BA122056281B00607016 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -510,11 +516,13 @@
 					};
 					1D06FBB61EFCC983005EB78E = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D06FBA21EFCC983005EB78E;
 					};
 					1D06FBC11EFCC983005EB78E = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D06FBA21EFCC983005EB78E;
 					};
@@ -626,6 +634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF4BA132056281B00607016 /* LoginViewModel.swift in Sources */,
 				1DB3FFA62003481B00BA64BE /* BaseTabViewController.swift in Sources */,
 				1D03C5A92022D94C0007C46B /* ProtocolClass.swift in Sources */,
 				1DB3FFA22003476F00BA64BE /* BaseViewController.swift in Sources */,
@@ -636,12 +645,13 @@
 				1D03C5AD2022E2410007C46B /* Meeting.swift in Sources */,
 				1D03C5AB2022E1E10007C46B /* Office.swift in Sources */,
 				1DB3FF9120031DA200BA64BE /* ContactViewController.swift in Sources */,
+				1DF4BA112056268B00607016 /* LoginViewController.swift in Sources */,
 				1D0F53D920035C4B0035D6D7 /* ConfigPrint.swift in Sources */,
 				1DB3FF9C2003476F00BA64BE /* BaseButton.swift in Sources */,
 				1D06FBE11EFD0E79005EB78E /* BaseRequest.swift in Sources */,
 				1DB3FFA02003476F00BA64BE /* BaseTableView.swift in Sources */,
 				1DB3FF9E2003476F00BA64BE /* BaseNavigationController.swift in Sources */,
-				1D791CC220036FCF00C24343 /* ConfigLocation.swift in Sources */,
+				1D791CC220036FCF00C24343 /* ConfigStings.swift in Sources */,
 				1DB3FF9D2003476F00BA64BE /* BaseLabel.swift in Sources */,
 				1DB3FFA820034B1400BA64BE /* QrCodeScanning.swift in Sources */,
 				1D0F53D720035AB50035D6D7 /* ConfigColor.swift in Sources */,
@@ -870,7 +880,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftProducts.SwiftProductsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftProducts.app/SwiftProducts";
 			};
 			name = Debug;
@@ -884,7 +895,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftProducts.SwiftProductsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftProducts.app/SwiftProducts";
 			};
 			name = Release;
@@ -897,7 +909,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftProducts.SwiftProductsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = SwiftProducts;
 			};
 			name = Debug;
@@ -910,7 +923,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SwiftProducts.SwiftProductsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = SwiftProducts;
 			};
 			name = Release;

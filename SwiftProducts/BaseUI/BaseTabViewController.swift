@@ -11,8 +11,7 @@ class BaseTabViewController: NormalTabBarController {
 
     override func viewDidLoad() {
         coller_Views = [ContactViewController(),MainViewController(),MineViewController()];
-        ConfigPrint.print(titles)
-        titles = [ConfigLocation.contact,ConfigLocation.home,ConfigLocation.mine]
+        titles = [ConfigStings.contact,ConfigStings.home,ConfigStings.mine]
         unSelect_Image_Names = ["tongxunlu","home","wode"];
         select_Image_Names = ["tongxunlufan","homefan","wodefan"];
         title_Colors = [UIColor.gray,UIColor.gray,UIColor.gray]
@@ -20,6 +19,9 @@ class BaseTabViewController: NormalTabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      
+        
+        
         
     }
 

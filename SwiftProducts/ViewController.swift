@@ -4,7 +4,8 @@
 //
 //  Created by wzk on 2017/6/23.
 //  Copyright © 2017年 wzk. All rights reserved.
-//
+//Restoration ID 是系统进入后台或者应用被终止，app重新起来时的用于恢复时使用。
+
 
 import UIKit
 

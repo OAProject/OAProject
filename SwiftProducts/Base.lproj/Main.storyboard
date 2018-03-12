@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -70,6 +71,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXS-MQ-Nvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76" y="-455.62218890554726"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="kSn-iJ-M9H">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="j7k-rj-Tw4" customClass="LoginViewController" customModule="SwiftProducts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ETZ-FE-etd"/>
+                        <viewControllerLayoutGuide type="bottom" id="eps-ZD-V1c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dmh-ym-OoD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入员工工号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QT5-xW-R34">
+                                <rect key="frame" x="118" y="173" width="213" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyA-2r-HGS">
+                                <rect key="frame" x="118" y="245" width="213" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt4-BT-ZZV" customClass="BaseLabel" customModule="SwiftProducts" customModuleProvider="target">
+                                <rect key="frame" x="35" y="178" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-Zg-g1G" customClass="BaseLabel" customModule="SwiftProducts" customModuleProvider="target">
+                                <rect key="frame" x="35" y="250" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u01-73-hRX" customClass="BaseButton" customModule="SwiftProducts" customModuleProvider="target">
+                                <rect key="frame" x="75" y="342" width="226" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="OLo-fI-fMF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="selectLoginButton:" destination="j7k-rj-Tw4" eventType="touchUpInside" id="awc-ki-pht"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QT5-xW-R34" firstAttribute="top" secondItem="ETZ-FE-etd" secondAttribute="bottom" constant="153" id="DbZ-WH-gFb"/>
+                            <constraint firstItem="QT5-xW-R34" firstAttribute="leading" secondItem="qt4-BT-ZZV" secondAttribute="trailing" constant="31" id="KtG-ly-3f7"/>
+                            <constraint firstItem="NyA-2r-HGS" firstAttribute="top" secondItem="QT5-xW-R34" secondAttribute="bottom" constant="42" id="LqW-Za-Zxh"/>
+                            <constraint firstItem="qt4-BT-ZZV" firstAttribute="leading" secondItem="dmh-ym-OoD" secondAttribute="leadingMargin" constant="19" id="MsP-2H-6DH"/>
+                            <constraint firstItem="qt4-BT-ZZV" firstAttribute="top" secondItem="ETZ-FE-etd" secondAttribute="bottom" constant="158" id="Oa5-gI-KaU"/>
+                            <constraint firstItem="u01-73-hRX" firstAttribute="top" secondItem="NyA-2r-HGS" secondAttribute="bottom" constant="67" id="aDz-gK-siu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QT5-xW-R34" secondAttribute="trailing" constant="28" id="eU4-yf-yff"/>
+                            <constraint firstItem="eCa-Zg-g1G" firstAttribute="leading" secondItem="dmh-ym-OoD" secondAttribute="leadingMargin" constant="19" id="fka-Ib-pFz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u01-73-hRX" secondAttribute="trailing" constant="58" id="g1H-ud-LmW"/>
+                            <constraint firstItem="eCa-Zg-g1G" firstAttribute="top" secondItem="qt4-BT-ZZV" secondAttribute="bottom" constant="51" id="ja3-wT-MO4"/>
+                            <constraint firstItem="NyA-2r-HGS" firstAttribute="leading" secondItem="eCa-Zg-g1G" secondAttribute="trailing" constant="31" id="lKH-Dy-Kin"/>
+                            <constraint firstItem="u01-73-hRX" firstAttribute="leading" secondItem="dmh-ym-OoD" secondAttribute="leadingMargin" constant="59" id="x4m-64-Sn8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NyA-2r-HGS" secondAttribute="trailing" constant="28" id="xTS-wK-RVA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="u01-73-hRX" id="Pkk-5k-dGe"/>
+                        <outlet property="labelNumberID" destination="qt4-BT-ZZV" id="a8E-6d-h3k"/>
+                        <outlet property="labelPwd" destination="eCa-Zg-g1G" id="PsU-6Z-HJM"/>
+                        <outlet property="textNumberID" destination="QT5-xW-R34" id="sXA-Wz-wjW"/>
+                        <outlet property="textPwd" destination="NyA-2r-HGS" id="VjB-h8-1q2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNT-cv-YOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1695.2" y="609.44527736131943"/>
         </scene>
         <!--我的-->
         <scene sceneID="sfV-de-TDe">

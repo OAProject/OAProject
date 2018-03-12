@@ -22,7 +22,7 @@ class ConfigStings: NSObject {
     public static let numberID = NSLocalizedString("账号", comment: "账号")
     public static let pwd = NSLocalizedString("密码", comment: "密码")
     
-    public static let pwd = NSLocalizedString(":", comment: "冒号")
+    public static let maohao = NSLocalizedString(":", comment: "冒号")
 
     
 }

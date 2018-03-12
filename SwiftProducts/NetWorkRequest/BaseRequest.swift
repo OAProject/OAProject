@@ -37,54 +37,56 @@ class BaseRequest: NSObject,UIAlertViewDelegate {
     var upLoadURL = ""
     let url = NSURL(string: "")
     // POST 方式：
-    func loadPOSTRequestWith(operationPath:String, params:[String: AnyObject]?,successAction:@escaping resSuccessClosure,failAction:@escaping resFailClosure) -> Void {
-        
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        //        Alamofire.request(url, method: HTTPMethod.post, parameters: [:], encoding: JSONEncoding, headers: nil)
-
-        var manger:SessionManager? = nil
+    func postRequest(url:String, params:[String: AnyObject]?,success:@escaping resSuccessClosure,fail:@escaping resFailClosure) -> Void {
+       // /*
+//        UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let config:URLSessionConfiguration = URLSessionConfiguration.default
         
         //设置超时时间为15S
-        config.timeoutIntervalForRequest = 30
+//        config.timeoutIntervalForRequest = 30
         //根据config创建manager
-        manger = SessionManager(configuration: config)
+        let manger = SessionManager(configuration: config, delegate: self, serverTrustPolicyManager: ServerTrustPolicyManager(policies: ServerTrustPolicy))
         
-        manger?.request("", method: .post, parameters: params, encoding: JSONEncoding.default).downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
-            print("Progress: \(progress.fractionCompleted)")
-            }
-            .validate { request, response, data in
-                // Custom evaluation closure now includes data (allows you to parse data to dig out error messages if necessary)
-               
-                return .success
+        
+        let dataRequest: DataRequest? = (manger.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: ["Content-Type": "application/x-www-form-urlencoded"]))
+        if (dataRequest != nil) {
+            dataRequest?.responseJSON{ (response) in
+                if(response.error == nil){
+                    print("请求成功")
+                    print(response.result.value as AnyObject)
+//                    success(response.result.value as AnyObject)
+                }else{
+                    print("请求失败\(String(describing: response.error))")
+                }
                 
             }
-            .responseJSON { response in
-                //                debugPrint(response)
         }
-        
-        
-        
-        
+ 
+        /*
+        Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+            
+            if(response.error == nil){
+                print("请求成功")
+                print(response.result.value)
+            }else{
+                print("请求失败\(String(describing: response.error))")
+            }
+            
+        }
+        */
     }
 
     // GET 方式：
-    func loadGETRequestWith(operationPath:String, params:[String: AnyObject]?,successAction:@escaping resSuccessClosure,failAction:@escaping resFailClosure) -> Void {
-        
-
-        Alamofire.request("", method: .get, parameters: params, encoding: JSONEncoding.default).downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
-            
-                print("Progress: \(progress.fractionCompleted)")
-            
-            }
-            .validate { request, response, data in
-                // Custom evaluation closure now includes data (allows you to parse data to dig out error messages if necessary)
-                
-                return .success
-                
-            }
-            .responseJSON { response in
+    func getRequest(url:String, params:[String: AnyObject]?,successAction:@escaping resSuccessClosure,failAction:@escaping resFailClosure) -> Void
+    {
+        Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default).responseJSON { response in
                 //                debugPrint(response)
+            if(response.error == nil){
+                print("请求成功")
+                print(response.result.value as AnyObject)
+            }else{
+                print("请求失败\(String(describing: response.error))")
+            }
         }
         
     }
