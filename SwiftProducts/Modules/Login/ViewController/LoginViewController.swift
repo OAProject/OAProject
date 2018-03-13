@@ -27,6 +27,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         labelNumberID.text = ConfigStings.numberID + ConfigStings.maohao
         labelPwd.text = ConfigStings.pwd + ConfigStings.maohao
+        buttonLogin.setTitle(ConfigStings.login, for: .normal)
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(LoginViewController.tappedView))
         view.addGestureRecognizer(tap)
@@ -36,7 +37,8 @@ class LoginViewController: UIViewController {
         textPwd.resignFirstResponder()
     }
     @IBAction func selectLoginButton(_ sender: Any) {
-        viewModel.raquestLogin("pony", pwd: "123456")
+//        viewModel.raquestLogin("pony", pwd: "123456")
+        viewModel.requestLogin(textNumberID.text, pwd: textPwd.text)
     }
     
   

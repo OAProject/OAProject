@@ -113,6 +113,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="OLo-fI-fMF"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="selectLoginButton:" destination="j7k-rj-Tw4" eventType="touchUpInside" id="awc-ki-pht"/>

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ObjectMapper
 class LoginViewModel: NSObject {
     static func isLogin()->Bool{
         var login :Bool = false
@@ -30,15 +30,23 @@ class LoginViewModel: NSObject {
         }
     }
     
-    func raquestLogin(_ name: String,pwd: String) {
+    func requestLogin(_ name: String? = "",pwd: String? = "") {
         let request = BaseRequest()
-        let dic:[String:AnyObject] = ["name":name as AnyObject,"password":pwd as AnyObject]
-        
-        request.postRequest(url: "http://10.7.6.201:8080/OAProject/doLogin", params: dic, success: { (object) in
+        let dic:[String:AnyObject] = ["name":name! as AnyObject,"password":pwd! as AnyObject]
+        let urlString = RequestConfig.urlString+RequestConfig.loginPath
+        request.postRequest(url: urlString, params: dic, success: { (object) in
+            
+            let login: LoginModel = Mapper<LoginModel>().map(JSONObject: object)!
+            if login.data != nil
+            {
+                let user: UserModel = login.data!
+                print(user.name)
+            }
             
         }) { (error) in
             
         }
+      
     }
     
     

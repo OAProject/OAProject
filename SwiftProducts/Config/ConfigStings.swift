@@ -21,7 +21,7 @@ class ConfigStings: NSObject {
     public static let mine = NSLocalizedString("我的", comment: "我的")
     public static let numberID = NSLocalizedString("账号", comment: "账号")
     public static let pwd = NSLocalizedString("密码", comment: "密码")
-    
+    public static let login = NSLocalizedString("登录", comment: "登录")
     public static let maohao = NSLocalizedString(":", comment: "冒号")
 
     
