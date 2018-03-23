@@ -8,7 +8,11 @@
 
 import UIKit
 import ObjectMapper
+
 class LoginViewModel: NSObject {
+
+    
+    
     static func isLogin()->Bool{
         var login :Bool = false
         let def :UserDefaults = UserDefaults.standard

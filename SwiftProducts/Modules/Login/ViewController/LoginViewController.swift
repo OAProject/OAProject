@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RxSwift
 class LoginViewController: UIViewController {
     
     private let viewModel: LoginViewModel = LoginViewModel()
@@ -31,6 +31,9 @@ class LoginViewController: UIViewController {
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(LoginViewController.tappedView))
         view.addGestureRecognizer(tap)
+        
+     
+        
     }
     @objc func tappedView(_ tapView: UITapGestureRecognizer) {
         textNumberID.resignFirstResponder()
